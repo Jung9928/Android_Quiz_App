@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    android:theme="@android:style/Theme.Translucent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#0099ff"
+        android:textSize="30sp"
+        android:text="NCS 개정[2020] 정보처리기사\n 필기 기출문제 모음" />
+
+    <EditText
+        android:id="@+id/main_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/main_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/main_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="로그인" />
+
+        <Button
+            android:id="@+id/main_join_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="계정 생성" />
+    </LinearLayout>
+
+</LinearLayout>
